@@ -1,0 +1,21 @@
+.FirstNavElement {
+    font-size: 1.5em;
+    padding-left: 15px;
+}
+
+.SecondNavElement {
+    display: flex;
+    padding-top: 27px;
+    justify-content: right;
+}
+
+.navigation-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    transform: scale(1.45);
+    padding: 5px;
+}
