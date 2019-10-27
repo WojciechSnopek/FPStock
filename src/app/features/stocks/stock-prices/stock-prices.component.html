@@ -16,11 +16,16 @@
         <td mat-cell *matCellDef="let stock"> {{stock.name}} </td>
     </ng-container>
 
+    <!-- Unit Column -->
+    <ng-container matColumnDef="unit">
+        <th mat-header-cell *matHeaderCellDef> Ammount </th>
+        <td mat-cell *matCellDef="let stock"> {{stock.unit}} </td>
+    </ng-container>
 
     <!-- Value Column -->
     <ng-container matColumnDef="value">
         <th mat-header-cell *matHeaderCellDef> Value </th>
-        <td mat-cell *matCellDef="let stock"> {{stock.price}} </td>
+        <td mat-cell *matCellDef="let stock"> {{stock.price | currency:'PLN '}} </td>
     </ng-container>
 
     <!-- Button Column -->

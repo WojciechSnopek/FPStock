@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 })
 export class StockPricesComponent implements OnInit {
   public stocks$: Observable<Array<Stock>>;
-  displayedColumns: string[] = ['company', 'value', 'actions'];
+  displayedColumns: string[] = ['company', 'unit', 'value', 'actions'];
 
   constructor(private readonly stockdataService: StockGatewayService) {
     this.getStockData();
