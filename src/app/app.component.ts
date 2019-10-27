@@ -1,18 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { StockDataService } from './stock-data.service';
-
+import { StockGatewayService } from './core/services/stock-gateway.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  providers: [StockDataService]
+  providers: [StockGatewayService]
 })
 export class AppComponent implements OnInit {
   stockInfo: {name: string, code: string, unit: number, price: number}[] = [];
 
-  constructor(private stockdataService: StockDataService) {}
+  constructor(private stockGatewayService: StockGatewayService) {}
 
   ngOnInit() {
-    this.stockInfo = this.stockdataService.stockInfo;
-  }
+      this.stockGatewayService.getStocks$();
+    }
 }

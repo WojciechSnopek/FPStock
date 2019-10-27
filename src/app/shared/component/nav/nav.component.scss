@@ -1,11 +1,11 @@
 .FirstNavElement {
-    font-size: 1.5em;
-    padding-left: 15px;
+    font-size: 1.8em;
+    padding-left: 18px;
 }
 
 .SecondNavElement {
     display: flex;
-    padding-top: 27px;
+    padding-top: 23px;
     justify-content: right;
 }
 
@@ -13,9 +13,16 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: purple;
 }
 
 .icon {
     transform: scale(1.45);
-    padding: 5px;
+    padding: 12px;
+    color: white;
+}
+
+p {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
