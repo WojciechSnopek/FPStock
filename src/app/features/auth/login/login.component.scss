@@ -1,0 +1,28 @@
+// h1 {
+//     display: flex;
+//     justify-content: center;
+//     padding-top: 10%;
+// }
+#message {
+    font-size: .8em;
+    padding: 10px;
+}
+
+.mat-card-content {
+    display: flex;
+    justify-content: center;
+}
+
+.mat-card-title {
+    display: flex;
+    justify-content: center;
+}
+
+.mat-card {
+    background-color: rgb(247, 243, 243);
+}
+
+button.mat-button {
+    background-color: rgb(124, 62, 155);
+    color: white;
+}

@@ -53,7 +53,7 @@ export class StockPricesComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(PurchaseDialogComponent, {
-      width: '350px',
+      width: '300px',
       data: {name: this.name}
     });
 

@@ -11,9 +11,12 @@ import { StockPricesComponent, PurchaseDialogComponent } from './features/stocks
 import { StockGraphComponent } from './features/stocks/stock-graph/stock-graph.component';
 import { MaterialModuleFeatures } from './shared/modules/material-module';
 import { EditProfileComponent } from './features/userAccount/edit-profile/edit-profile.component';
-import { LoginComponent } from './features/userAccount/login/login.component';
+import { LoginComponent } from './features/auth/login/login.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule  } from '@angular/common/http';
+import { PageNotFoundComponent } from './shared/component/page-not-found/page-not-found.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +28,8 @@ import { HttpClientModule  } from '@angular/common/http';
     EditProfileComponent,
     LoginComponent,
     HomeComponent,
-    PurchaseDialogComponent
+    PurchaseDialogComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,8 @@ import { HttpClientModule  } from '@angular/common/http';
     BrowserAnimationsModule,
     MatSliderModule,
     MaterialModuleFeatures,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   entryComponents: [StockPricesComponent, PurchaseDialogComponent],
   providers: [],
