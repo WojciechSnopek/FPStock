@@ -1,0 +1,30 @@
+{
+    "users": [{
+            "id": 1,
+            "first_name": "Sebastian",
+            "last_name": "Kowalski",
+            "email": "sebastian@mail.com",
+            "username": "Sebaziom",
+            "password": "pass123",
+            "money": "200"
+        },
+        {
+            "id": 2,
+            "first_name": "Steve",
+            "last_name": "Kowalsky",
+            "email": "steve@mail.com",
+            "username": "Stivziom",
+            "password": "pass234",
+            "money": "100"
+        },
+        {
+            "id": 3,
+            "first_name": "Ann",
+            "last_name": "Kowalska",
+            "email": "ann@mail.com",
+            "username": "Aniaziomala",
+            "password": "pass456",
+            "money": "500"
+        }
+    ]
+}

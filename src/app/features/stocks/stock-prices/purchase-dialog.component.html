@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>How many {{ data.name }} actions would you like to buy?</h1>
+<mat-form-field class="example-full-width">
+    <textarea matInput type="number" placeholder="Enter action ammount"></textarea>
+</mat-form-field>
+<div mat-dialog-content>
+    <p>It will cost you: X</p>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+    <button mat-button [mat-dialog-close]="data.name" cdkFocusInitial>Purchase</button>
+</div>

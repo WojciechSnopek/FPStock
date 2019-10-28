@@ -1,1 +1,27 @@
-<p>edit-profile works!</p>
+<h2>Edit user profile</h2>
+<!--
+<mat-form-field>
+    <textarea matInput placeholder="Textarea"></textarea>
+</mat-form-field> -->
+
+
+<div class="mat-form-decorator" *ngFor="let user of users$ | async">
+
+    <mat-form-field>
+        <textarea matInput placeholder="First Name:">{{ user.first_name }}</textarea>
+    </mat-form-field>
+    <mat-form-field>
+        <textarea matInput placeholder="Last Name:">{{ user.last_name }}</textarea>
+    </mat-form-field>
+    <mat-form-field>
+        <textarea matInput placeholder="Email:">{{ user.email }}</textarea>
+    </mat-form-field>
+    <mat-form-field>
+        <textarea matInput placeholder="Password:">{{ user.password }}</textarea>
+    </mat-form-field>
+    <mat-form-field>
+        <textarea matInput placeholder="Money amount:">{{ user.money }}</textarea>
+    </mat-form-field>
+
+    <br>
+</div>
