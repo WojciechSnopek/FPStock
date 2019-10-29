@@ -1,16 +1,16 @@
 <nav mat-tab-nav-bar style="justify-content: space-between;">
     <div class="navigation-container">
         <div class="FirstNavElement">
-            <a href="#" [routerLink]="['/home']">
+            <a href="#" matTooltip="home" [routerLink]="['/home']">
                 <p>Stocks</p>
             </a>
         </div>
         <div class="SecondNavElement">
             <a href="#" [routerLink]="['/edit-profile']">
-                <mat-icon class="icon">settings</mat-icon>
+                <mat-icon matTooltip="Edit user profile" class="icon">settings</mat-icon>
             </a>
             <a href="#" [routerLink]="['/login']">
-                <mat-icon (click)="logout()" *ngIf="authService.isLoggedIn" class="icon">power_settings_new</mat-icon>
+                <mat-icon matTooltip="Logout" (click)="logout()" *ngIf="authService.isLoggedIn" class="icon">power_settings_new</mat-icon>
             </a>
         </div>
     </div>
