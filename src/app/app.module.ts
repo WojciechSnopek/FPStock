@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule  } from '@angular/material/slider';
 import { MyWalletComponent } from './features/wallet/my-wallet/my-wallet.component';
 import { NavComponent } from './shared/component/nav/nav.component';
-import { StockPricesComponent, PurchaseDialogComponent } from './features/stocks/stock-prices/stock-prices.component';
+import { StockPricesComponent } from './features/stocks/stock-prices/stock-prices.component';
 import { StockGraphComponent } from './features/stocks/stock-graph/stock-graph.component';
 import { MaterialModuleFeatures } from './shared/modules/material-module';
 import { EditProfileComponent } from './features/userAccount/edit-profile/edit-profile.component';
@@ -16,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule  } from '@angular/common/http';
 import { PageNotFoundComponent } from './shared/component/page-not-found/page-not-found.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PurchaseDialogComponent } from './features/stocks/stock-prices/purchase-dialog.component';
 
 
 @NgModule({

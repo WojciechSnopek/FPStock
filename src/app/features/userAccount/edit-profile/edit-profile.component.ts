@@ -9,10 +9,11 @@ import { Observable } from 'rxjs';
   styleUrls: ['./edit-profile.component.scss']
 })
 export class EditProfileComponent implements OnInit {
-  users$: Observable<any> = this.http.get('/api/users');
+  users$: Observable<any>;
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
+    this.users$ = this.http.get('/api/users');
   }
 
 }

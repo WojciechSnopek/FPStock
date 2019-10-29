@@ -1,27 +1,15 @@
-# StockApp
+Technical Documentation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.1.
+In order to run the application correctly you have to go through the following steps:
 
-## Development server
+1.	Download Node.js from https://nodejs.org/en/ 
+(node version: 10.16.2, npm version: 6.9.0)
+2.	Download Git from https://gitforwindows.org/
+3.	Install Angular CLI with the following command: 
+npm install -g @angular/cli json-server
+4.	Download Stock Project from GitHub using the command: 
+git clone https://github.com/WojciechSnopek/FPStock.git
+5.	In command line navigate to the project directory, then and install all required dependencies with npm install.
+6.	Run the project with npm script:
+npm run start-all, which will run the database (json-server) and angular in ahead of time compilation using concurrently package.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

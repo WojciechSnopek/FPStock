@@ -3,12 +3,13 @@
     "version": "0.0.0",
     "scripts": {
         "ng": "ng",
-        "start": "ng serve",
+        "start": "ng serve --aot",
         "build": "ng build",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "api": "json-server api/db.json --routes api/routes.json --no-cors=true"
+        "api": "json-server api/db.json --routes api/routes.json --no-cors=true",
+        "start-all": "concurrently --kill-others \"npm run api\" \"npm run start\" "
     },
     "private": true,
     "dependencies": {
@@ -22,6 +23,7 @@
         "@angular/platform-browser": "~8.2.0",
         "@angular/platform-browser-dynamic": "~8.2.0",
         "@angular/router": "~8.2.0",
+        "concurrently": "^5.0.0",
         "hammerjs": "^2.0.8",
         "rxjs": "~6.4.0",
         "tslib": "^1.10.0",
